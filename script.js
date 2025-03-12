@@ -15,12 +15,12 @@ function wishMe(){
     let day=new Date()
     let hours=day.getHours()
     if(hours>=0 && hours<12){
-        speak("Good Morning Sir")
+        speak("Good Morning")
     }
     else if(hours>=12 && hours <16){
-        speak("Good afternoon Sir")
+        speak("Good afternoon")
     }else{
-        speak("Good Evening Sir")
+        speak("Good Evening")
     }
 }
 // window.addEventListener('load',()=>{
@@ -44,10 +44,10 @@ function takeCommand(message){
    voice.style.display="none"
     btn.style.display="flex"
     if(message.includes("hello")||message.includes("hey")){
-        speak("hello sir,what can i help you?")
+        speak("hello ,how can i help you?")
     }
     else if(message.includes("who are you")){
-        speak("i am virtual assistant ,created by Ayush Sir")
+        speak("i am virtual assistant ,created by Gouri Sharma")
     }else if(message.includes("open youtube")){
         speak("opening youtube...")
         window.open("https://youtube.com/","_blank")
